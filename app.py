@@ -1,0 +1,13 @@
+from flask import render_template, Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def roleSelect():
+    return render_template('index.html')
+@app.route('/educator')
+def teacherLogin():
+    return render_template('teacherLogin.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
