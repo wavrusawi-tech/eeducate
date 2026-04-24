@@ -7,7 +7,7 @@ def roleSelect():
     return render_template('index.html')
 @app.route('/educator')
 def teacherLogin():
-    return render_template('teacherLogin.html')
+    return render_template('educatorLogin.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
