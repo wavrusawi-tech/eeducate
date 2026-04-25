@@ -4,6 +4,8 @@
 
 {% block content %}
 <h1>eEducate</h1>
+<!--Ignore the line 8 error! It is Jinja2 syntax-->
+<button onclick="window.location.href = {{ url_for('roleSelect') }}" class="btn btn-outline-secondary">Back</button>
 <div class="card sm-shadow">
     <div class="card-body">
         <h1 class="card-title h4">Educator Login</h1>
