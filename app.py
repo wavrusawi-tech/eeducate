@@ -6,7 +6,7 @@ app = Flask(__name__)
 def roleSelect():
     return render_template('index.html')
 @app.route('/educator')
-def teacherLogin():
+def educatorLogin():
     return render_template('educatorLogin.html')
 
 if __name__ == '__main__':
