@@ -19,7 +19,7 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    path('admin/', admin.py.site.urls),
+    path('admin/', admin.site.urls),
     
     # This connects your users app to the rest of the site
     path('roles/', include('login.urls')),
