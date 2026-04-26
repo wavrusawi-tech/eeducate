@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eEducate Documentation | Installation</title>
+</head>
+<body>
+    <ol>
+        <li>
+            <p>Create a Python venv:</p>
+            <pre>
+                <code>
+                    python3 -m venv .venv
+                </code>
+            </pre>
+            <strong><p>The <code>.venv</code> is very important.</p></strong>
+        </li>
+        <li>
+            <p>Activate the venv:</p>
+            <p>Windows (CMD):</p>
+            <pre>
+                <code>
+                .venv\Scripts\activate
+                </code>
+            </pre>
+            <p>CMD may not be accurate</p>
+            <p>macOS/Linux:</p>
+            <pre>
+                <code>
+                    source .venv/bin/activate
+                </code>
+            </pre>
+        </li>
+        <li>
+            <p>Install Django:</p>
+            <pre>
+                <code>
+                    pip install django
+                </code>
+            </pre>
+        </li>
+        <li>
+            <p>Add a superuser:</p>
+            <pre>
+                <code>
+                    python manage.py createsuperuser
+                </code>
+            </pre>
+            <p>The terminal will guide you through the superuser creation.</p>
+        </li>
+        <li>
+            <p>Start the server:</p>
+            <pre>
+                <code>
+                    python manage.py runserver
+                </code>
+            </pre>
+        </li>
+        <li>
+            <p>Go to http://localhost:8000/admin (assuming you're on the same server you started Django on.)</p>
+        </li>
+        <li>
+            <p>Sign in with the credentials you made with the <code>python manage.py createsuperuser</code> command.</p>
+        </li>
+        <li>
+            <p>Once you're logged in, find E educate admins, and click it.</p>
+        </li>
+        <li>
+            <p>Push CREATE E EDUCATE ADMIN</p>
+        </li>
+        <li>
+            <p>In the user dropdown, choose the username of the superuser you created. (for every eEducate Admin, there must be a corresponding superuser)</p>
+        </li>
+        <li>
+            <p>In the username field, enter a unique username</p>
+        </li>
+        <li>
+            <p>
+                In the password field, enter a secure password.
+            </p>
+        </li>
+        <li>
+            <p>In the Authorized apps field, you need to have the app names inside <strong>DOUBLE</strong> quotes, inside the square brackets, seperated by commas. Availible options are: LMS, SIS, Exam, and Curriculum.</p>
+        </li>
+        <li>
+            <p>Then push the save button that fits your needs.</p>
+        </li>
+    </ol>
+</body>
+</html>
