@@ -1,0 +1,15 @@
+# Site settings
+title: eEducate Documentation
+description: Technical manual for the eEducate SIS and LMS.
+
+# Theme settings
+remote_theme: just-the-docs/just-the-docs
+
+# Navigation settings
+# This ensures links point to /your-repo-name/ instead of the root
+baseurl: "/eeducate" 
+url: "https://wavrusawi-tech.github.io"
+
+# Plugins needed for GitHub Pages
+plugins:
+  - jekyll-remote-theme
