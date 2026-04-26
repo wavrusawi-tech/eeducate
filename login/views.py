@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
-# Create your views here.
+def role_select(request):
+    return render('request', 'login/role.html')
