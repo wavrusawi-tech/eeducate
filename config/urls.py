@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # This connects your users app to the rest of the site
-    path('roles/', include('login.urls')),
+    path('', include('login.urls')),
 ]
