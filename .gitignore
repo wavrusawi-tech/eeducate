@@ -1,2 +1,22 @@
 .venv/
 __pycache__/
+# Database
+db.sqlite3
+db.sqlite3-journal
+
+# Media files (User uploads)
+media/
+
+# Collected static files (Production)
+static/
+# Credentials and secrets
+.env
+.python-version
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
